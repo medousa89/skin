@@ -1086,6 +1086,41 @@
     <ePixmap pixmap="skin_default/buttons/key_next.png" alphatest="blend" position="82,1034" size="52,38" />
     <ePixmap pixmap="skin_default/buttons/key_0.png" alphatest="blend" position="135,1034" size="52,38" />
     <widget name="list" position="780,100" size="1110,912" scrollbarMode="showOnDemand" />
+  <ePixmap position="59,566" zPosition="1" size="50,50" pixmap="CinoGriPLiFhd/icons/ram.png" alphatest="blend" />
+  <widget source="session.Event_Now" render="Progress" pixmap="CinoGriPLiFhd/infobar/bar_finder.png" position="120,568" size="280,20" transparent="1" borderWidth="2" borderColor="grey" zPosition="2">
+    <convert type="ProgressDiskSpaceInfo">MemTotal</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" zPosition="6" position="120,590" size="550,26" halign="left" valign="center" font="Regular; 20" transparent="1" backgroundColor="background">
+    <convert type="ProgressDiskSpaceInfo">MemTotal,Full</convert>
+  </widget>
+  <ePixmap position="60,620" zPosition="1" size="50,50" pixmap="CinoGriPLiFhd/icons/swap.png" alphatest="blend" />
+  <widget source="session.Event_Now" render="Progress" pixmap="CinoGriPLiFhd/infobar/bar_finder.png" position="120,621" size="280,20" transparent="1" borderWidth="2" borderColor="grey" zPosition="2">
+    <convert type="ProgressDiskSpaceInfo">SwapTotal</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" zPosition="6" position="120,643" size="550,26" halign="left" valign="center" font="Regular; 20" transparent="1" backgroundColor="background">
+    <convert type="ProgressDiskSpaceInfo">SwapTotal,Full</convert>
+  </widget>
+  <ePixmap position="60,674" zPosition="1" size="50,50" pixmap="CinoGriPLiFhd/icons/flash.png" alphatest="blend" />
+  <widget source="session.Event_Now" render="Progress" pixmap="CinoGriPLiFhd/infobar/bar_finder.png" position="120,676" size="280,20" transparent="1" borderWidth="2" borderColor="grey" zPosition="2">
+    <convert type="ProgressDiskSpaceInfo">FleshInfo</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" zPosition="6" position="120,696" size="550,26" halign="left" valign="center" font="Regular; 20" transparent="1" backgroundColor="background">
+    <convert type="ProgressDiskSpaceInfo">Flesh,Full</convert>
+  </widget>
+  <ePixmap position="60,780" zPosition="1" size="50,50" pixmap="CinoGriPLiFhd/icons/usb.png" alphatest="blend" />
+  <widget source="session.Event_Now" render="Progress" pixmap="CinoGriPLiFhd/infobar/bar_finder.png" position="120,780" size="280,20" transparent="1" borderWidth="2" borderColor="grey" zPosition="2">
+    <convert type="ProgressDiskSpaceInfo">UsbInfo</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" zPosition="6" position="120,802" size="550,26" halign="left" valign="center" font="Regular; 20" transparent="1" backgroundColor="background">
+    <convert type="ProgressDiskSpaceInfo">UsbInfo,Full</convert>
+  </widget>
+  <ePixmap position="60,726" zPosition="1" size="50,50" pixmap="CinoGriPLiFhd/icons/hdd.png" alphatest="blend" />
+  <widget source="session.Event_Now" render="Progress" pixmap="CinoGriPLiFhd/infobar/bar_finder.png" position="120,728" size="280,20" transparent="1" borderWidth="2" borderColor="grey" zPosition="2">
+    <convert type="ProgressDiskSpaceInfo">HddInfo</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" zPosition="6" position="120,748" size="550,26" halign="left" valign="center" font="Regular; 20" transparent="1" backgroundColor="background">
+    <convert type="ProgressDiskSpaceInfo">HddInfo,Full</convert>
+  </widget>    
   </screen>
   <screen name="PluginDownloadBrowser" title="Downloadable plugins" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate" />
