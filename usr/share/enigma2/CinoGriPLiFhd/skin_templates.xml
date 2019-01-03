@@ -381,7 +381,9 @@
       <convert type="ServiceName">Provider</convert>
     </widget>
     <eLabel text="Cpu:." position="1447,985" size="74,30" font="Regular; 26" borderWidth="1" backgroundColor="black" foregroundColor="amavi" transparent="1" zPosition="2" halign="left" />
-    <widget source="global.CurrentTime" render="cnCpuTemp" borderWidth="1" position="1507,985" size="86,30" halign="center" font="Regular;26" backgroundColor="black" foregroundColor="bbeyaz" transparent="1" zPosition="2" />
+     <widget backgroundColor="black" position="1517,985" size="80,30" font="Regular; 28" halign="center" foregroundColor="white" transparent="1" zPosition="10" render="Label" source="global.CurrentTime">
+      <convert type="cnCPUinfo">CPUtemp</convert>
+    </widget>
     <widget source="session.FrontendStatus" render="Label" borderWidth="1" position="1628,914" size="110,30" text="15.2 dB" backgroundColor="black" transparent="1" zPosition="2" foregroundColor="bbeyaz" font="Regular; 28" halign="right">
       <convert type="CnFrontendInfo">SNRdB</convert>
     </widget>
