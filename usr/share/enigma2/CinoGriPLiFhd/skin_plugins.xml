@@ -596,7 +596,7 @@
   </screen>
   <screen flags="wfNoBorder" name="VlcServerListScreen" position="fill">
     <panel name="PigTemplate" />
-    <eLabel text="Select a VLC-Server Profile" position="30,7" size="1830,75" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="left" />
+    <!--<eLabel text="Select a VLC-Server Profile" position="30,7" size="1830,75" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="left" />-->
     <widget name="serverlabel" position="780,105" size="1110,54" font="Regular;27" />
     <widget name="serverlist" position="885,219" size="900,462" itemHeight="42" scrollbarMode="showOnDemand" />
   </screen>
@@ -832,10 +832,10 @@
   <screen name="DreamExplorerII" position="fill" title="Dream-Explorer" flags="wfNoBorder">
     <panel name="PigTemplate" />
     <panel name="KeyMenuInfoTemplate" />
-    <eLabel text="Delete" position="242,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left" />
+    <!-- <eLabel text="Delete" position="242,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left" />
     <eLabel text="Rename" position="678,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left" />
     <eLabel text="Move/Copy" position="1114,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left" />
-    <eLabel text="Bookmarks" position="1550,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left" />
+    <eLabel text="Bookmarks" position="1550,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left" /> -->
     <widget name="filelist" position="780,100" size="1110,912" scrollbarMode="showOnDemand" />
   </screen>
   <screen name="vInputBox" position="fill" title="Input..." flags="wfNoBorder">
